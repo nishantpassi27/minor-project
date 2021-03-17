@@ -1,0 +1,149 @@
+
+\documentclass[aspectratio=169,xcolor=dvipsnames]{beamer}
+\usetheme{Warsaw}
+
+\usepackage{hyperref}
+\usepackage{graphicx} 
+\usepackage{booktabs} 
+
+\title{\textbf{SYNOPSIS}}
+\subtitle{Railway Route Optimization }
+
+\author[Railway Route Optimization  ]
+{\large{\textbf{\textcolor[RGB]{255,0,0}{MADE BY :-}}}\\
+{\small{\textbf{\textcolor[RGB]{20,13,125}{	MEHUL AGGARWAL  \hspace{0.1cm} -  1805529}}}}\\
+{\small{\textbf {\textcolor[RGB]{20,13,125}{ NISHANT PASSI\hspace{0.8cm} - 1805534}}}}\\
+{\small{\textbf {\textcolor[RGB]{20,13,125}{ NIVEDAN SHARMA \hspace{0.1cm} - 1805535}}}} \\}
+\institute[GNDEC]
+{\small{{\textcolor[RGB]{20,13,125}{Department of Information Technology\\
+  Guru Nanak Dev Engineering College, Ludhiana}}\\
+ }}
+\date{\today} % Date, can be changed to a custom date
+
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{frame}
+ \titlepage
+\end{frame}
+
+\begin{frame}{Overview}
+\tableofcontents
+\end{frame}
+
+%------------------------------------------------
+\section{\textcolor[RGB]{255,0,0}{INTRODUCTION}}
+%------------------------------------------------
+
+\begin{frame}{INTRODUCTION}
+\begin{itemize}
+
+   \item Railway Route Optimization System is a product to serve to users who are tourists. The Main purpose of the project is to let the end users or passengers to know the shortest path to reach the destination with in short period and with amount as minimum as possible and as early as possible when more than one Railways route is to there to reach the destination.
+   \item This optimization system shows the graphical representation of the train route from staring point to ending point, this is very use full in now a days to know the train details i.e. train Starting Point and Ending Point, Starting time and arrival time Charge for A Starting point to Ending Point
+  
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------\\
+
+\subsection{\textcolor[RGB]{0,0,0}{IMPLEMENTATION}}
+\begin{frame}{STATIONS MODULE}
+\begin{itemize}
+
+   \item This module Maintains the data about station and allow operations like addition, deletion, modification. This module maintains stations tables and fields are station-id, station-name, and district, state. In this table Station-id, station-name is unique does not allow any unique values.
+   \item For arranging a route Starting station, ending station, via stations are must be registered in stations module, after registration of the stations administrator can arrange the path among that stations. This station module is handled by administrator only, can not handle end user
+
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------\\
+
+\begin{frame}{TRAINS MODULE}
+\begin{itemize}
+
+\item This module maintains the data about trains and allows operations like additions, deletion, and modification. The train module handles trains table and fields are train-id, train-name, starting-station, ending station, starting-time, ending-time, train-type.
+\item In this train-id unique and this attribute does not allow any duplicate values
+
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------\\
+
+\begin{frame}{ROUTE MODULE}
+\begin{itemize}
+
+\item This module maintains the data about routes between stations and This module handle the routes tables and fields are route-id, starting-station, destination, timetakenforordinary, and timetakenforexpress. The module shows the graphical representation of a route between starting-station and destination.
+\item This module is very useful to know routes between any two stations and also know shortest path among the routes, and also gives graphical representation of the corresponding routes
+
+
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------\\
+
+\begin{frame}{SEARCH MODULE}
+\begin{itemize}
+    \item{\textbf{ It consists of 2 parts}}
+\end{itemize}
+
+    \begin{block}{Administrator}
+        The administrator has privileges on Stations, Trains, and Routes he can Add data into these tables and allow all operations on these tables. Once data is stored into these tables after the traveler can send a query on that data for generating reports. And he can easily find out which is the shortest path between two stations
+    \end{block}
+    \begin{block}{Traveler}
+     The traveler has only privileges on search for a train and a route. The traveler sends queries to server and gets reports on the requested data and he will get graphical representation of the path between any two stations
+    \end{block}
+
+\end{frame}
+
+%------------------------------------------------
+
+\section{\textcolor[RGB]{255,0,0}{APPLICATIONS}}
+
+\begin{frame}{APPLICATIONS}
+\begin{itemize}
+
+   \item This algorithm can also be applied in many other fields of railway 
+applications, such as the crew scheduling, station operating 
+plan optimization etc. Its optimization ability affords the 
+possibility to solve the optimization problems in railway 
+applications with high precision and efficiency. It is no doubt 
+that this algorithm has a bright future in the field of railway applications.
+   \item This project helps to give 
+the end users or passengers to know the shortest path to reach 
+the destination with in short period and with amount as 
+minimum as possible and as early as possible when more than 
+one Railways route is to there to reach the destination.
+
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+
+\section{\textcolor[RGB]{255,0,0}{REFERENCES}}
+\begin{frame}{REFERENCES}
+\begin{itemize}
+
+   \item https://www.geeksforgeeks.org/
+   \item https://www.youtube.com/
+   \item https://www.w3schools.com/
+  
+\end{itemize}    
+\end{frame}
+
+%------------------------------------------------
+
+\section{\textcolor[RGB]{255,0,0}{ACKNOWLEDGEMENT}}
+\begin{frame}
+\frametitle{{\textbf{ACKNOWLEDGEMENT}}}
+\begin{center}
+
+\includegraphics[width=0.6\columnwidth]{THANKS.PNG}
+
+\end{center}
+\end{frame}
+\end{document}
